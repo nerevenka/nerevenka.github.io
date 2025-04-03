@@ -1,0 +1,220 @@
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+
+/**
+ * Correct `block` display not defined in IE 8/9.
+ */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+    display: block;
+}
+
+/**
+ * Correct `inline-block` display not defined in IE 8/9.
+ */
+
+audio,
+canvas,
+video {
+    display: inline-block;
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+
+[hidden] {
+    display: none;
+}
+
+/* Default */
+
+html {
+	height:100%;
+}
+body {
+	height:100%;
+	color:#404a53;
+	font-size:16px;
+	line-height:22px;
+	padding:0;
+	margin:0;
+	font-family: 'Calibri';
+
+}
+img {
+	padding:0;
+	margin:0;
+	border:0;
+}
+a {
+	color:#333333;
+}
+a:hover {
+	color:#333333;
+	text-decoration:none;
+}
+h1 {
+	text-transform: uppercase;
+	text-align: center;
+	color: #DF3528;
+	font-family: 'Calibri', sans-serif;
+}
+h2 {
+	font-size: 17px; 
+	font-weight: normal;
+	 text-transform: uppercase;
+	 color: #a4a4a4;
+}
+
+	::-moz-selection{ color: #fff; background: #DF3528; text-shadow: none; }
+	::selection { color: #fff; background: #DF3528; text-shadow: none; } 
+
+@font-face {
+    font-family: 'Calibri';
+    src: url('Calibri.eot');
+    src: url('Calibri.eot?#iefix') format('embedded-opentype'),
+         url('Calibri.woff') format('woff'),
+         url('Calibri.ttf') format('truetype'),
+         url('Calibri.svg#Calibri') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+li {
+	list-style-type: none; 
+	padding: 0 0 0 20px;
+	background: url(marker.png) left 7px no-repeat;
+}
+ul {
+	margin: 0;
+	padding: 0;
+	
+}
+/* Content */
+
+#wrapper {
+	position:relative;
+	min-height:100%;
+	height:auto !important;
+	height:100%;	
+	width: 920px;
+	margin: 0 auto; 
+}
+
+#catalog {
+	padding:5px 0;
+	margin:0 auto;
+}
+.item {
+	position:relative;
+	float:left;
+	width:160px;
+	padding:5px;
+	margin:0 6px 12px;
+	background:#f8f8f8;
+	border:1px solid #cccccc;
+	-moz-border-radius:8px;
+	-webkit-border-radius:8px;
+	border-radius:8px;
+    -webkit-box-shadow:1px 1px 1px #d5d5d5;
+    -moz-box-shadow:1px 1px 1px #d5d5d5;
+    box-shadow:1px 1px 1px #d5d5d5;
+	behavior:url('./pie.htc');
+/*
+	-moz-transition: all 1s ease;
+	-webkit-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	transition: all 1s ease;
+	opacity: 1;
+*/
+}
+.item img {
+	width:160px;
+	margin:0 0 -5px;
+	-moz-border-radius:7px;
+	-webkit-border-radius:7px;
+	border-radius:7px;
+	behavior:url('./pie.htc');
+
+}
+.item:hover {
+	border:1px solid #DF3528;
+    -webkit-box-shadow:1px 1px 1px #d5d5d5;
+    -moz-box-shadow:1px 1px 1px #d5d5d5;
+    box-shadow:1px 1px 1px #d5d5d5;
+	behavior:url('./pie.htc');
+/*opacity: 0.6;
+-moz-transform: scale(1.2) ;
+-webkit-transform: scale(1.2);
+-o-transform: scale(1.2);
+transform: scale(1.2);
+z-index: 1000;
+*/
+}
+
+.item a {
+	text-decoration:none;
+}
+.item span {
+	position:absolute;
+	right:1px;
+	bottom:1px;
+	display:block;
+	color:#999999;
+	font-weight:bold;
+	padding:2px 5px;
+	background:#f8f8f8;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+}
+
+.left {
+	float: left; 
+	width: 50%;
+
+}
+.right {
+	float: right;
+	width: 50%;
+}
+.content {
+	overflow: hidden;
+}
+h4 {
+	margin: 5px 0;
+	font-weight: bold; 
+	text-transform: uppercase;
+}
+h4.h4 {
+	color: #DF3528;
+margin-top: 20px;
+padding-top: 20px;
+border-top: 1px #ccc solid;
+}
+.clear {
+	clear: both;
+}
